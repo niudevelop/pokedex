@@ -1,0 +1,29 @@
+{
+  "name": "pokedex",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "TS Pokedex",
+  "main": "index.js",
+  "scripts": {
+    "build": "npx tsc",
+    "start": "node dist/main.js",
+    "dev": "npx tsc && node dist/main.js",
+    "test": "vitest --run"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/niudevelop/pokedex.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/niudevelop/pokedex/issues"
+  },
+  "homepage": "https://github.com/niudevelop/pokedex#readme",
+  "devDependencies": {
+    "@types/node": "^25.0.3",
+    "typescript": "^5.9.3",
+    "vitest": "^4.0.16"
+  }
+}
