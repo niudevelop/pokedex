@@ -1,4 +1,3 @@
-import type { ShallowLocations } from "./pokeapi.js";
 import type { State } from "./state.js";
 
 export async function commandMapForward(state: State) {

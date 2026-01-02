@@ -21,7 +21,8 @@ export async function startREPL(state: State) {
     const command = availabeleCommands[commandInputs[0]];
     if (command) {
       try {
-        await command.callback(state);
+        const args = commandInputs.filter((cmd) => cmd != command.name);
+        await command.callback(state, ...args);
       } catch (error) {
         throw error;
       }
